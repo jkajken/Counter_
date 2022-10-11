@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Counter_</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_0">0</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="count_with_winnie_and_his_friends">Count with Winnie and his friends</string>
+</resources>
