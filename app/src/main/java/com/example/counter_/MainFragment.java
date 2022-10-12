@@ -1,5 +1,7 @@
 package com.example.counter_;
 
+
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainFragment extends Fragment {
     private TextView counter;
@@ -47,10 +50,13 @@ public class MainFragment extends Fragment {
             public void onClick(View view) {
                 String currentValue = counter.getText().toString();
                 int value = Integer.parseInt(currentValue);
+                if(value == 0){
+                    int value1 = Integer.parseInt(currentValue);
+                    Toast.makeText(getActivity(), "Number can not be negative", Toast.LENGTH_SHORT).show();}
+                else
                 value--;
                 counter.setText(String.valueOf(value));
 
             }
         });
-    }
-}
+    };}
